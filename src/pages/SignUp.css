@@ -1,0 +1,27 @@
+ion-content {
+  --background: url("../assets/images/tanjidor.jpg") no-repeat center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+ion-item {
+  --border-width: 2px; /* Set the border width as needed */
+  --border-color: #ccc; /* Set the border color as needed */
+  --border-radius: 8px; /* Set the border radius as needed */
+  margin-bottom: 14px;
+}
+
+ion-input {
+  border: var(--border-width) solid var(--border-color);
+  border-radius: var(--border-radius);
+}
+
+ion-card-header {
+  text-align: center;
+}
+
+.button-signup {
+  border: "1px solid white";
+}
