@@ -1,6 +1,6 @@
 ## Clone this branch
 ```bash
-git clone -b template git@github.com/AlvitoDian/Project-Mobile.git
+git clone -b template https://github.com/AlvitoDian/Project-Mobile.git
 ```
 
 ## Install required modules
