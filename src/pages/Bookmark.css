@@ -1,0 +1,62 @@
+/* Gaya untuk tombol bookmark */
+ion-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  border-radius: 20px; /* Menentukan tingkat kebulatan tombol (sesuaikan sesuai dengan keinginan) */
+  overflow: hidden; /* Memastikan border-radius diterapkan dengan benar */
+  margin: auto; /* Untuk membuat tombol berada di tengah */
+}
+
+/* Gaya untuk ikon bookmark di dalam tombol */
+ion-button ion-icon {
+  font-size: 1.5em; /* Ukuran ikon */
+  --transition: color 0.3s; /* Animasi perubahan warna ikon */
+}
+
+/* Gaya untuk teks di dalam ikon bookmark di dalam tombol */
+ion-button span {
+  margin-left: 5px; /* Jarak antara ikon dan teks */
+}
+
+/* Efek animasi pada tombol bookmark saat disentuh atau ditekan */
+ion-button::before {
+  content: "";
+  position: absolute;
+  top: -5px; /* Menyesuaikan jarak atas */
+  left: -5px; /* Menyesuaikan jarak kiri */
+  right: -5px; /* Menyesuaikan jarak kanan */
+  bottom: -5px; /* Menyesuaikan jarak bawah */
+  background-color: transparent;
+  transition: background-color 0.3s;
+  border-radius: 25px; /* Menyesuaikan tingkat kebulatan */
+  z-index: -1;
+}
+
+ion-button:hover::before {
+  background-color: #e5e5e5; /* Warna latar belakang saat disentuh */
+}
+
+ion-button:active::before {
+  background-color: #f7f7f7; /* Warna latar belakang saat ditekan */
+}
+
+/* Gaya untuk tombol bookmark saat warna berubah menjadi merah (ter-bookmark) */
+ion-button[color="danger"]::before {
+  background-color: #ff5757; /* Warna latar belakang saat disentuh (ter-bookmark) */
+}
+
+ion-button[color="danger"]:active::before {
+  background-color: #a9a9a9; /* Warna latar belakang saat ditekan (ter-bookmark) */
+}
+
+/* Gaya kursor saat hover */
+ion-button:hover {
+  cursor: pointer;
+}
+
+/* Gaya untuk tombol bookmark pada perangkat sentuh */
+ion-button:active {
+  transform: scale(0.95); /* Efek ketika tombol ditekan pada perangkat sentuh */
+}
