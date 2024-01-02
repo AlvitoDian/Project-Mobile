@@ -57,7 +57,11 @@ const Login: React.FC = () => {
           <IonCardContent>
             {/* Tambahkan formulir pendaftaran di sini */}
             {/* Contoh formulir sederhana */}
-            <IonList>
+            <IonList
+              style={{
+                backgroundColor: "#1E1E1E",
+              }}
+            >
               <div>
                 <p
                   style={{

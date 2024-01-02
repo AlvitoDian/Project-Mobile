@@ -53,7 +53,11 @@ const Signup: React.FC = () => {
             Create an account
           </IonCardHeader>
           <IonCardContent>
-            <IonList>
+            <IonList
+              style={{
+                backgroundColor: "#1E1E1E",
+              }}
+            >
               <div>
                 <p
                   style={{
@@ -125,7 +129,7 @@ const Signup: React.FC = () => {
                 >
                   <IonInput
                     placeholder="min 6 characters"
-                    type="email"
+                    type="password"
                     style={{
                       backgroundColor: "#3B3B3B",
                       color: "white",
@@ -153,7 +157,7 @@ const Signup: React.FC = () => {
                 >
                   <IonInput
                     placeholder="your password"
-                    type="email"
+                    type="password"
                     style={{
                       backgroundColor: "#3B3B3B",
                       color: "white",
