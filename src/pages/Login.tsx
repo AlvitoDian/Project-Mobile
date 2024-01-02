@@ -49,6 +49,7 @@ const Login: React.FC = () => {
             style={{
               color: "#A0B0BC",
               fontSize: "17px",
+              marginTop: "10px",
             }}
           >
             Welcome to hyakunime
@@ -57,56 +58,58 @@ const Login: React.FC = () => {
             {/* Tambahkan formulir pendaftaran di sini */}
             {/* Contoh formulir sederhana */}
             <IonList>
-              <p
-                style={{
-                  color: "#A0B0BC",
-                }}
-              >
-                Email
-              </p>
-              <div
-                style={{
-                  padding: "3px",
-                  border: "1px solid white",
-                  borderRadius: "5px",
-                }}
-              >
-                <IonInput
-                  placeholder="Email"
-                  type="email"
-                  value={email}
-                  onIonChange={(e) => setEmail(e.detail.value!)}
+              <div>
+                <p
                   style={{
-                    backgroundColor: "#1E1E1E",
-                    color: "white",
+                    color: "#A0B0BC",
                   }}
-                />
+                >
+                  Email
+                </p>
+                <div
+                  style={{
+                    border: "1px solid white",
+                  }}
+                >
+                  <IonInput
+                    placeholder="Email"
+                    type="email"
+                    value={email}
+                    onIonChange={(e) => setEmail(e.detail.value!)}
+                    style={{
+                      backgroundColor: "#3B3B3B",
+                      color: "white",
+                      height: "10px",
+                    }}
+                  />
+                </div>
               </div>
-              <p
-                style={{
-                  marginTop: "15px",
-                  color: "#A0B0BC",
-                }}
-              >
-                Password
-              </p>
-              <div
-                style={{
-                  padding: "3px",
-                  border: "1px solid white",
-                  borderRadius: "5px",
-                }}
-              >
-                <IonInput
-                  placeholder="Password"
-                  type="password"
-                  value={password}
-                  onIonChange={(e) => setPassword(e.detail.value!)}
+              <div>
+                <p
                   style={{
-                    backgroundColor: "#1E1E1E",
-                    color: "white",
+                    marginTop: "15px",
+                    color: "#A0B0BC",
                   }}
-                />
+                >
+                  Password
+                </p>
+                <div
+                  style={{
+                    border: "1px solid white",
+                  }}
+                >
+                  <IonInput
+                    placeholder="Password"
+                    type="password"
+                    value={password}
+                    onIonChange={(e) => setPassword(e.detail.value!)}
+                    style={{
+                      backgroundColor: "#3B3B3B",
+                      color: "white",
+                      height: "10px",
+                    }}
+                  />
+                </div>
               </div>
               <IonRouterLink routerLink="/register">
                 <p
@@ -121,7 +124,11 @@ const Login: React.FC = () => {
             <IonButton
               color="white"
               expand="block"
-              style={{ border: "1px solid white", borderRadius: "5px" }}
+              style={{
+                border: "1px solid white",
+                borderRadius: "5px",
+                backgroundColor: "#191E24",
+              }}
               onClick={() => signup()}
             >
               LOGIN

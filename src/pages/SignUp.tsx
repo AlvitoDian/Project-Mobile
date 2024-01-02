@@ -36,7 +36,7 @@ const Signup: React.FC = () => {
       <IonContent>
         <IonCard
           style={{
-            marginTop: "200px",
+            marginTop: "150px",
             width: "80%",
             marginLeft: "auto",
             marginRight: "auto",
@@ -44,57 +44,144 @@ const Signup: React.FC = () => {
             padding: "8px",
           }}
         >
-          {/* <IonCardHeader
+          <IonCardHeader
             style={{
-              color: "white",
+              color: "#A0B0BC",
               fontSize: "17px",
             }}
           >
-            Welcome to hyakunime
-          </IonCardHeader> */}
+            Create an account
+          </IonCardHeader>
           <IonCardContent>
-            {/* Tambahkan formulir pendaftaran di sini */}
-            {/* Contoh formulir sederhana */}
             <IonList>
-              <IonItem>
-                <IonLabel position="floating">Nickname</IonLabel>
-                <IonInput
-                  type="text"
-                  value={nickname}
-                  onIonChange={(e) => setNickname(e.detail.value!)}
-                ></IonInput>
-              </IonItem>
-              <IonItem>
-                <IonLabel position="floating">Email</IonLabel>
-                <IonInput
-                  type="email"
-                  value={email}
-                  onIonChange={(e) => setEmail(e.detail.value!)}
-                ></IonInput>
-              </IonItem>
-              <IonItem>
-                <IonLabel position="floating">Kata Sandi</IonLabel>
-                <IonInput
-                  type="password"
-                  value={password}
-                  onIonChange={(e) => setPassword(e.detail.value!)}
-                ></IonInput>
-              </IonItem>
+              <div>
+                <p
+                  style={{
+                    color: "#A0B0BC",
+                  }}
+                >
+                  Nickname
+                </p>
+                <div
+                  style={{
+                    border: "1px solid white",
+                  }}
+                >
+                  <IonInput
+                    placeholder="Nickname"
+                    type="text"
+                    style={{
+                      backgroundColor: "#3B3B3B",
+                      color: "white",
+                      height: "10px",
+                    }}
+                  />
+                </div>
+              </div>
+              <div
+                style={{
+                  marginTop: "15px",
+                }}
+              >
+                <p
+                  style={{
+                    color: "#A0B0BC",
+                  }}
+                >
+                  Email
+                </p>
+                <div
+                  style={{
+                    border: "1px solid white",
+                  }}
+                >
+                  <IonInput
+                    placeholder="example@mail.com"
+                    type="email"
+                    style={{
+                      backgroundColor: "#3B3B3B",
+                      color: "white",
+                      height: "10px",
+                    }}
+                  />
+                </div>
+              </div>
+              <div
+                style={{
+                  marginTop: "15px",
+                }}
+              >
+                <p
+                  style={{
+                    color: "#A0B0BC",
+                  }}
+                >
+                  Password
+                </p>
+                <div
+                  style={{
+                    border: "1px solid white",
+                  }}
+                >
+                  <IonInput
+                    placeholder="min 6 characters"
+                    type="email"
+                    style={{
+                      backgroundColor: "#3B3B3B",
+                      color: "white",
+                      height: "10px",
+                    }}
+                  />
+                </div>
+              </div>
+              <div
+                style={{
+                  marginTop: "15px",
+                }}
+              >
+                <p
+                  style={{
+                    color: "#A0B0BC",
+                  }}
+                >
+                  Verify Password
+                </p>
+                <div
+                  style={{
+                    border: "1px solid white",
+                  }}
+                >
+                  <IonInput
+                    placeholder="your password"
+                    type="email"
+                    style={{
+                      backgroundColor: "#3B3B3B",
+                      color: "white",
+                      height: "10px",
+                    }}
+                  />
+                </div>
+              </div>
             </IonList>
             <IonButton
               color="white"
               expand="block"
-              style={{ border: "1px solid white", borderRadius: "5px" }}
+              style={{
+                border: "1px solid white",
+                borderRadius: "5px",
+                marginTop: "10px",
+                backgroundColor: "#191E24",
+              }}
               onClick={() => signup()}
             >
-              SIGNUP
+              SIGN UP
             </IonButton>
             <IonRouterLink routerLink="/login">
               <p
                 style={{
                   textAlign: "center",
                   marginTop: "15px",
-                  color: "white",
+                  color: "#A0B0BC",
                 }}
               >
                 Have an account ? Login here
