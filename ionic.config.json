@@ -1,7 +1,0 @@
-{
-  "name": "hyakunime",
-  "integrations": {
-    "capacitor": {}
-  },
-  "type": "react-vite"
-}
