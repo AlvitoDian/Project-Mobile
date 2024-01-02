@@ -1,17 +1,30 @@
 import React from 'react';
 import { IonCard, IonCardContent, IonButton, IonInput} from '@ionic/react';
 
+import "./User_Profile.css"
+
 function Example() {
   return (
     <div id="container">
-      <IonCard>
+      <IonCard style={{
+            marginTop: "150px",
+            width: "40%",
+            marginLeft: "auto",
+            marginRight: "auto",
+            borderRadius: "5px",
+            padding: "8px",
+          }}>
         <IonCardContent>
             Nickname<br/>
-            <IonInput label="Outline input" labelPlacement="floating" fill="outline" placeholder="New Nickname"></IonInput><br/>
+            <IonInput labelPlacement="floating" fill="solid" placeholder="New Nickname"></IonInput><br/>
             Email<br/>
-            <IonInput label="Outline input" labelPlacement="floating" fill="outline" placeholder="New Email"></IonInput><br/>
-            <IonButton expand="block" color="warning" >DELETE USER ?</IonButton><br/>
-            <IonButton expand="block" color="danger">CANCEL</IonButton><IonButton expand="block" color="success">UPDATE</IonButton>
+            <IonInput labelPlacement="floating" fill="solid" placeholder="New Email"></IonInput><br/>
+            <IonButton expand="block" color="warning" fill="outline" style={{ fontWeight: "bold", }}>DELETE USER ?</IonButton>
+            <br />
+            <div id="buttonContainer">
+              <IonButton color="danger" fill="outline" style={{ fontWeight: "bold",  }}>CANCEL</IonButton>
+              <IonButton color="success" fill="outline" style={{ fontWeight: "bold", float: "right", }}>UPDATE</IonButton>
+            </div>
           </IonCardContent>
       </IonCard>
     </div>
